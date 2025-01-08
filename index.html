@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estacionamento</title>
+  <!-- Link para o Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Link para o CSS personalizado -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Tela de Login -->
+  <div id="loginScreen" class="container mt-5">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <div class="mb-3">
+        <label for="username" class="form-label">Usuário</label>
+        <input type="text" class="form-control" id="username" required>
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Senha</label>
+        <input type="password" class="form-control" id="password" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Entrar</button>
+    </form>
+  </div>
+
+  <!-- Tela do Estacionamento (apenas para ADMIN) -->
+  <div id="parkingScreen" class="container mt-5" style="display:none;">
+    <h2>Estacionamento</h2>
+    <div class="mb-3">
+      <button class="btn btn-success" onclick="showNewTicketForm()">Novo Ticket</button>
+      <button class="btn btn-danger" onclick="logout()">Logout</button>
+    </div>
+
+    <!-- Formulário para novo ticket -->
+    <div id="newTicketForm" style="display:none;">
+      <h4>Preencher Novo Ticket</h4>
+      <form id="ticketForm">
+        <div class="mb-3">
+          <label for="plate" class="form-label">Placa do Carro</label>
+          <input type="text" class="form-control" id="plate" required>
+        </div>
+        <div class="mb-3">
+          <label for="fullName" class="form-label">Nome Completo</label>
+          <input type="text" class="form-control" id="fullName" required>
+        </div>
+        <div class="mb-3">
+          <label for="cpf" class="form-label">CPF</label>
+          <input type="text" class="form-control" id="cpf" required>
+        </div>
+        <div class="mb-3">
+          <label for="phone" class="form-label">Telefone</label>
+          <input type="text" class="form-control" id="phone" required>
+        </div>
+        <div class="mb-3">
+          <label for="entryTime" class="form-label">Hora de Entrada</label>
+          <input type="datetime-local" class="form-control" id="entryTime" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Adicionar Ticket</button>
+        <button type="button" class="btn btn-secondary" onclick="cancelNewTicket()">Cancelar</button>
+      </form>
+    </div>
+
+    <h4>Tickets Ativos</h4>
+    <table id="ticketTable" class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Placa</th>
+          <th>Nome</th>
+          <th>Entrada</th>
+          <th>Saída</th>
+          <th>Valor</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Tickets serão exibidos aqui -->
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Página de Detalhes do Ticket -->
+  <div id="ticketDetailPage" class="container mt-5" style="display:none;">
+    <h2>Detalhes do Ticket</h2>
+    <p id="ticketDetails"></p>
+    <button class="btn btn-secondary" onclick="backToParkingScreen()">Voltar</button>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="src/script.js"></script>
+</body>
+</html>
