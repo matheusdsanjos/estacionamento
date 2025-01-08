@@ -1,0 +1,27 @@
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+  }
+  
+  h2 {
+    color: #007bff;
+  }
+  
+  #loginScreen {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  #parkingScreen, #ticketDetailPage {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  table th, table td {
+    text-align: center;
+  }
+  
+  table {
+    width: 100%;
+  }
+  
