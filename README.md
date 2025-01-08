@@ -30,6 +30,8 @@ Este é um projeto final da disciplina de **Desenvolvimento Web I** do curso de 
 
 ## Estrutura do Projeto
 
+/estacionamento │ ├── index.html # Página principal (Login e gerenciamento de tickets) ├── style.css # Estilos e layout da página ├── script.js # Funcionalidades principais (login, criação de tickets, etc) ├── dados.xml # Dados simulando o banco de dados de tickets ├── README.md # Informações sobre o projeto
+
 ## Equipe de alunos
 
 - **Matheus dos Anjos de Oliveira**
