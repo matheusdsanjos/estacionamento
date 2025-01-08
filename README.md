@@ -39,6 +39,6 @@ Este é um projeto final da disciplina de **Desenvolvimento Web I** do curso de 
 
 1. Clone o repositório em sua máquina:
    ```bash
-   git clone https://github.com/seuusuario/seu-repositorio.git
+   git clone https://github.com/matheusdsanjos/estacionamento.git
 
 2. Abra o arquivo index.html em seu navegador.
