@@ -2,6 +2,10 @@
 
 Este é um projeto final da disciplina de **Desenvolvimento Web I** do curso de **Análise e Desenvolvimento de Sistemas**. O objetivo é criar um sistema de gerenciamento de estacionamento, com funcionalidades como criação de tickets, controle de tarifas, aplicação de descontos e geração de relatórios diários. O sistema também possui autenticação para diferentes tipos de usuários, como **ADMIN** e **Funcionário**.
 
+## Link de acesso
+
+https://estacionamento-6a6b1.web.app
+
 ## Funcionalidades
 
 - **Autenticação de Usuários**: Tela de login para diferenciação entre o tipo de usuário (ADMIN e Funcionário).
